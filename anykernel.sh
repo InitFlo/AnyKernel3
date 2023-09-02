@@ -17,11 +17,12 @@ device.name4=gram
 device.name5=joyeuse
 supported.versions=11.0-13.0
 supported.patchlevels=
+supported.vendorpatchlevels=
 '; } # end properties
 
 ### AnyKernel install
-# begin attributes
-attributes() {
+## boot files attributes
+boot_attributes() {
 set_perm_recursive 0 0 755 644 $ramdisk/*;
 } # end attributes
 
